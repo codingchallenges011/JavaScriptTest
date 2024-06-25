@@ -65,6 +65,7 @@ function saveAccountBalances(accountBalances, outputFilePath) {
     return csvWriter.writeRecords(records);
 }
 
+
 async function main() {
     try {
         const accountBalances = await loadAccountBalances('account_balances.csv');
